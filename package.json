@@ -1,0 +1,22 @@
+{
+  "name": "povio",
+  "version": "1.0.0",
+  "description": "Povio Assignment - Automated QA",
+  "main": "index.js",
+  "scripts": {
+    "test:loggedIn:chrome": "npx playwright test --project='loggedInTests'",
+    "test:chrome": "npx playwright test --project='Chrome Desktop'",
+    "test:firefox": "npx playwright test --project='Firefox Desktop'",
+    "test:safari": "npx playwright test --project='Safari Desktop'"
+  },
+  "keywords": [],
+  "author": "Gjorgi Dimov",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.50.1",
+    "@types/node": "^22.13.1"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7"
+  }
+}
