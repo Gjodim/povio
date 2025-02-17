@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        browser: [chromium, firefox, webkit]
+        browser: ['Chrome Desktop', 'Firefox Desktop', 'Safari Desktop']
     steps:
       - uses: actions/checkout@v4
 
@@ -37,11 +37,17 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
+      - name: Run Setup
+        run: npx playwright test --project=newUserSignUpAndLogin
+
       - name: Run Playwright tests
         env:
           SIGNIN_USERNAME: ${{ secrets.SIGNIN_USERNAME }}
           SIGNIN_PASSWORD: ${{ secrets.SIGNIN_PASSWORD }}
         run: npx playwright test --project=${{ matrix.browser }}
+
+      - name: Run Teardown
+        run: npx playwright test --project=cancelAccount
 
       - uses: actions/upload-artifact@v4
         if: ${{ !cancelled() }}
