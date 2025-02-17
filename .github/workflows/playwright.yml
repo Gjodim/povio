@@ -37,9 +37,6 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
-      - name: Run Setup
-        run: npx playwright test --project=newUserSignUpAndLogin
-
       - name: Run Playwright tests
         env:
           SIGNIN_USERNAME: ${{ secrets.SIGNIN_USERNAME }}

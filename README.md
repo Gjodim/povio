@@ -49,3 +49,6 @@ To run tests in a CI/CD pipeline, add the following secrets to your GitHub repos
    - `SIGNIN_USERNAME`
    - `SIGNIN_PASSWORD`
 ```
+
+### Artifacts
+Artifacts are available in CI/CD under each run.
