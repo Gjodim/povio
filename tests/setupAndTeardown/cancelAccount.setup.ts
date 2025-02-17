@@ -16,6 +16,7 @@ setup("Sign up and login to application", async ({ page }) => {
   await signInPage.goToPage();
   await signInPage.typeInEmailField(newUser.email);
   await signInPage.typeInPasswordField(newUser.password);
+  console.log('These are the users: ' + newUser.name + newUser.password);
   await signInPage.clickSignInButton();
   await signedInHomePage.verifySignedInAlert();
   await signedInEditAccountPage.goToPage();
