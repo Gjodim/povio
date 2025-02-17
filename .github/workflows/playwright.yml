@@ -44,6 +44,7 @@ jobs:
         env:
           SIGNIN_USERNAME: ${{ secrets.SIGNIN_USERNAME }}
           SIGNIN_PASSWORD: ${{ secrets.SIGNIN_PASSWORD }}
+          BROWSER: ${{ matrix.browser }}
         run: npx playwright test --project=${{ matrix.browser }}
 
       - name: Run Teardown
@@ -53,5 +54,5 @@ jobs:
         if: ${{ !cancelled() }}
         with:
           name: playwright-report-${{ matrix.browser }}
-          path: playwright-report/
+          path: playwright-report/${{ matrix.browser }}
           retention-days: 30

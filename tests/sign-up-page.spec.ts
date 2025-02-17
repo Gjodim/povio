@@ -4,7 +4,7 @@ import { HomePage } from "../pages/home-page";
 import { SignInPage } from "../pages/sign-in-page";
 import { SignUpPage } from "../pages/sign-up-page";
 import { SignedInHomePage } from "../pages/signed-in-home-page";
-import { TestData as data } from "../Data/test-data";
+import { TestData as data } from "../data/test-data";
 import { generateUniqueString } from "../utils/utils";
 import { test } from "@playwright/test";
 

@@ -2,7 +2,7 @@ import { CampaignsPage } from "../../pages/campaigns-page";
 import { NewCampaignPage } from "../../pages/new-campaign-page";
 import { SignInPage } from "../../pages/sign-in-page";
 import { SignedInHomePage } from "../../pages/signed-in-home-page";
-import { TestData as data } from "../../Data/test-data";
+import { TestData as data } from "../../data/test-data";
 import fs from "fs";
 import { generateUniqueString } from "../../utils/utils";
 import { test } from "@playwright/test";
