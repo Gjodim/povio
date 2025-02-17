@@ -23,6 +23,4 @@ setup("Sign up and login to application", async ({ page }) => {
   await signedInEditAccountPage.cancelMyAccount();
   await homePage.navigatedToPage();
   await homePage.successfulCanceledAccount();
-
-  fs.writeFileSync("newUser.json", "[]", "utf8");
 });
