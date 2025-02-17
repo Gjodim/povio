@@ -4,10 +4,10 @@
   "description": "Povio Assignment - Automated QA",
   "main": "index.js",
   "scripts": {
-    "test:loggedIn:chrome": "npx playwright test --project='loggedInTests'",
-    "test:chrome": "npx playwright test --project='Chrome Desktop'",
-    "test:firefox": "npx playwright test --project='Firefox Desktop'",
-    "test:safari": "npx playwright test --project='Safari Desktop'"
+    "test:loggedIn:chrome": "npx playwright test --project='Logged_In'",
+    "test:chrome": "npx playwright test --project='Chrome_Desktop'",
+    "test:firefox": "npx playwright test --project='Firefox_Desktop'",
+    "test:safari": "npx playwright test --project='Safari_Desktop'"
   },
   "keywords": [],
   "author": "Gjorgi Dimov",

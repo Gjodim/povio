@@ -51,7 +51,7 @@ export default defineConfig({
     },
 
     {
-      name: 'loggedInTests',
+      name: 'Logged_In',
       testMatch: 'tests/signed-in/**/*.spec.ts',
       dependencies: ['newUserSignUpAndLogin'],
       teardown: 'cancelAccount',
