@@ -24,5 +24,5 @@ setup("Sign up and login to application", async ({ page }) => {
   await homePage.navigatedToPage();
   await homePage.successfulCanceledAccount();
 
-  fs.unlinkSync("newUser.json");
+  fs.writeFileSync("newUser.json", "", "utf8");
 });
