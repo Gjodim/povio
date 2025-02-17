@@ -62,19 +62,19 @@ export default defineConfig({
     },
 
     {
-      name: 'Chrome Desktop',
+      name: 'Chrome_Desktop',
       testIgnore: 'tests/signed-in/**/*.spec.ts',
       use: { ...devices['Desktop Chrome'] },
     },
 
     {
-      name: 'Firefox Desktop',
+      name: 'Firefox_Desktop',
       testIgnore: 'tests/signed-in/**/*.spec.ts',
       use: { ...devices['Desktop Firefox'] },
     },
 
     {
-      name: 'Safari Desktop',
+      name: 'Safari_Desktop',
       testIgnore: 'tests/signed-in/**/*.spec.ts',
       use: { ...devices['Desktop Safari'] },
     },

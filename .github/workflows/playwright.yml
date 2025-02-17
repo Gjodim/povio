@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        browser: ['Chrome Desktop', 'Firefox Desktop', 'Safari Desktop']
+        browser: ['Chrome_Desktop', 'Firefox_Desktop', 'Safari_Desktop']
     steps:
       - uses: actions/checkout@v4
 
