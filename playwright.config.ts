@@ -55,7 +55,7 @@ export default defineConfig({
       testMatch: 'tests/signed-in/**/*.spec.ts',
       dependencies: ['newUserSignUpAndLogin'],
       teardown: 'cancelAccount',
-      use: { ...devices['Desktop Chrome'] }
+      use: { ...devices['Desktop Chrome'] },
     },
 
     {
